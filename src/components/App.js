@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from "./Header";
 
 const App = () => {
-  return <div clasName="hello"> hello
+  return <div clasName="hello"> 
   <header>
-    <h1><a href="">Logo</a></h1>
+    <Header> <h1 class="Dark"> Custom Business Card Generator </h1> </Header>
+    <h2><a href="">Logo</a></h2>
     <nav>
       <ul>
         <li><a href="">Link 1</a></li>

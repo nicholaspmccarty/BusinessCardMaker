@@ -4,11 +4,27 @@
     list-style: none;
     line-height: 1;
     box-sizing: border-box;
-    font-family: "Monteserrat";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: normal;
     font-size: 1em; 
 }
 
 body {
-    font-size 10pt;
+    font-size: 10pt;
+    @import "App.scss";
+}
+
+header {
+    text-align: center; 
+    h1 {
+        padding: 10px;
+        text-align: center;
+        background-color:#f5f5f5 ;
+
+    }
+}
+
+.Dark {
+    background-color: #333;
+    color: #fff;
 }
