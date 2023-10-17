@@ -5,7 +5,7 @@ import Preview from "./Preview";
 const App = () => {
   return <div clasName="hello"> 
   <header>
-    <Header> <h1 class="Dark"> Custom Business Card Generator </h1> </Header>
+    <Header> <h1 class="Dark"  > Custom Business Card Generator </h1> </Header>
     </header>
     <main> 
     <Form />
