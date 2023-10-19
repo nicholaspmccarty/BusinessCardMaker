@@ -1,26 +1,22 @@
-import React from 'react';
-import FormElement from './FormElement';
+import React from "react";
+import FormElement from "./FormElement";
 
-
-const Form = () => {
-  
-
+const Form = ({ onChange, Values }) => {
   return (
-    
-      <>
-        <form>
-          {["Name", "Designation", "Phone", "Email"].map((field, key) => (
-            <div key={key}>
-              <label style={{ display: 'block', marginBottom: '5px' }}>
-                <strong>{field}</strong>
-                <input type="text" style={{ display: 'block', marginBottom: '15px' }} />
-              </label>
-            </div>
-          ))}
-        </form>
-      </>
-    );
-  };
-  
+    <section className="Form">
+      <h2>Enter your Details</h2>
+      <form onChange={onChange}>
+        {Object.keys(Values).map((field, key) => (
+          <FormElement
+            ID={field}
+            Label={field}
+            Value={Values[field]}
+            key={key}
+          />
+        ))}
+      </form>
+    </section>
+  );
+};
 
-export default Form
+export default Form;
